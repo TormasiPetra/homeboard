@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply rounded-full;
+  
+}
+
+.text {
+  @apply text-primary-content
+}
+
+h1 {
+@apply text-3xl font-semibold my-2 mb-4  text-secondary-content
+}
+
+h2 { 
+@apply text-lg mb-2 text-secondary-content opacity-90
+}
+
+.img {
+@apply w-8 aspect-square 
+}
+
+.gridelement {
+@apply p-2 py-6 rounded-full flex flex-col justify-center items-center bg-opacity-40 
+}
+
+section {
+@apply p-6 sm:p-10
+}
