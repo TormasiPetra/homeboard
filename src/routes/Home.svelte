@@ -158,5 +158,4 @@ import { location } from "svelte-spa-router";
       </div>
     </section>
   
-    <Footer />
   </main>

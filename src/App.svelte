@@ -18,6 +18,7 @@
   import NotFound from './routes/Notfound.svelte';
 
   import Router, {link, location} from "svelte-spa-router";
+  import Footer from "./Components/Footer.svelte";
 
   const routes = {
     '/': Home,
@@ -33,7 +34,7 @@
 
 <Router {routes} />
 
-
+<Footer />
 
 
 
