@@ -1,3 +1,8 @@
+<script lang="ts">
+  import Privacy from "../Components/hb_privacy.svelte";
+</script>
 
 
-<h1 class="z-50 text-primary text-3xl">Privacy please</h1>
+<div class="m-auto max-w-[1440px] mt-28">
+<Privacy />
+</div>

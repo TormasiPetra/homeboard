@@ -1,1 +1,9 @@
-<h1>Terms of use hehe</h1>
+<script lang="ts">
+  import Terms from "../Components/hb_terms.svelte";
+</script>
+
+
+<div class="m-auto max-w-[1440px] mt-28">
+    <Terms/>
+</div>
+

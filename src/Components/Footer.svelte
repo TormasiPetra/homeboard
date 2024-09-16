@@ -1,8 +1,12 @@
-<footer class=" left-0 right-0 bottom-0 p-6 text-center z-10 bg-neutral">
+<script lang="ts">
+  import { link } from "svelte-spa-router";
+</script>
+
+<footer class=" left-0 right-0 bottom-0 p-6 text-center z-10">
     <div class="flex flex-col items-center gap-4">
-      <h3>Privacy Policy</h3>
-      <h3>Term of use</h3>
-      <h3>Contact</h3>
+      <a use:link href="/privacy">Privacy Policy</a>
+      <a use:link href="/terms">Term of use</a>
+      <a use:link href="/contact">Contact</a>
     </div>
     <div class="p-8 flex gap-4 justify-center">
       <button>

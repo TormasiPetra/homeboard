@@ -1,7 +1,6 @@
 <script lang="ts">
+  import { link } from "svelte-spa-router";
   import logo from "./../assets/img_logo_homeboard_white.svg";
-import { location } from "svelte-spa-router";
-
 
 
 </script>
@@ -17,11 +16,12 @@ import { location } from "svelte-spa-router";
 
   <nav class="flex gap-2">
     <a
-      href="/#/privacy"
+    use:link
+      href="/privacy"
       class="blog btn border-none btn-accent bg-opacity-80 text-primary-content"
       >Privacy</a
     >
-    <a href="/#/terms" class="download btn text-primary-content btn-outline">Terms</a
+    <a use:link href="/terms" class="download btn text-primary-content btn-outline">Terms</a
     >
   </nav>
 </header>
