@@ -15,9 +15,32 @@
   import bgBoxes from "./../assets/bg-boxes.svg";
   import Header from "../Components/Header.svelte";
   import Footer from "../Components/Footer.svelte";
+
+  import { onMount } from 'svelte';
+
+let scrollY = 0;
+
+// Function to update scroll position
+function handleScroll() {
+  scrollY = window.scrollY;
+}
+
+// Add event listener when component mounts
+onMount(() => {
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+});
 </script>
 
-<main class="relative w-screen overflow-hidden">
+<style>
+  /* Custom styles if needed */
+ /*  .transform {
+    transition: transform 0.3s ease;
+  } */
+</style>
+
+
+<main class="relative overflow-x-hidden">
   <section
     class="relative bg-primary p-10 md:p-12 lg:p-12 pb-0 flex justify-center items-center text-center"
   >
@@ -33,92 +56,96 @@
     />
 
     <div
-      class="z-40 flex justify-center flex-col lg:flex-row lg:gap-6 items-center text-center"
+      class="z-40 flex justify-center flex-col lg:flex-row lg:gap-6 lg:justify-evenly items-center text-center"
     >
       <div class="w-full">
-        <h1 class="text m-auto mb-4 max-w-[640px] lg:min-w-[320px]">
+        <h1 class="text m-auto mb-4 max-w-[640px] lg:min-w-[320px] xl:text-5xl">
           Mood Board creator for interior designers
         </h1>
 
-        <h2 class="text m-auto px-4 mb-4 max-w-[640px] lg:min-w-[320px]">
+        <h2 class="text m-auto px-4 mb-4 xl:mb-8 max-w-[640px] lg:min-w-[320px]  xl:text-2xl">
           HomeBoard is the best tool to create mood boards, making it easy to
           design your home.
         </h2>
 
         <div
-          class="flex flex-col max-w-[320px] md:flex-row md:justify-center m-auto gap-2 lg:gap-4 w-full mb-6"
+          class="flex flex-col max-w-[320px] xl:max-w-[840px] md:flex-row md:justify-center m-auto gap-2 lg:gap-4 w-full mb-6"
         >
           <a
-            class="flex items-center justify-center bg-secondary rounded-full text text-mg font-semibold h-10 min-w-[180px]"
+            class="flex items-center justify-center bg-secondary rounded-full text text-mg font-semibold min-h-10 min-w-[180px] xl:px-8"
             href="#"
           >
-            <img class="h-8" src={apple} alt="" />
-            <h2 class="mb-0 text opacity-100">Get iOS</h2>
+            <img class="h-8 xl:h-12 " src={apple} alt="" />
+            <h2 class="mb-0 text opacity-100 xl:text-2xl">Get iOS</h2>
           </a>
 
           <a
-            class="flex items-center justify-center p-2 bg-secondary rounded-full text text-mg font-semibold h-10 gap-2 min-w-[180px]"
+            class="flex items-center justify-center p-2 bg-secondary rounded-full text text-mg font-semibold min-h-10 gap-2 min-w-[180px] lg:px-8"
             href="#"
           >
-            <img class="h-4" src={android} alt="" />
-            <h2 class="mb-0 text opacity-100">Get Android</h2>
+            <img class="h-4 " src={android} alt="" />
+            <h2 class="mb-0 text opacity-100 xl:text-2xl">Get Android</h2>
           </a>
         </div>
       </div>
 
-      <div class="grid h-80 lg:w-[640px]">
-        <img class="w-80 my-2 drop-shadow-lg" src={landing_0} alt="landing-0" />
+      <div class="grid h-80 lg:min-w-[640px] justify-center">
+        <img class="w-80 my-2 drop-shadow-lg lg:min-w-[400px]" src={landing_0} alt="landing-0" />
       </div>
     </div>
   </section>
 
   <section class="mt-32 w-screen flex flex-col md:items-center">
-    <div class="flex flex-col md:flex-row md:max-w-[1024px]">
+    <div class="flex flex-col md:flex-row md:gap-4 lg:gap-12">
       <div class="max-md:hidden md:visible">
-        <img class="max-w-80 md:max-w-96 m-auto" src={landing_1} alt="" />
+        <img class="max-w-80  md:max-w-[450px] m-auto" src={landing_1} alt="" />
       </div>
       <div
-        class="flex flex-col md:max-w-[350px] md:justify-center md:ml-6 md:mt-20"
+        class="flex flex-col md:max-w-[500px] md:justify-center md:ml-6 md:mt-20"
       >
-        <h1 class="">Remove the backgrounds</h1>
-        <h2 class="mb-6">
+        <h1 class="xl:text-4xl">Remove the backgrounds</h1>
+        <h2 class="mb-6 xl:text-2xl">
           Collect your images for visualization and easily erase the backgrounds
         </h2>
       </div>
       <img class="md:hidden max-w-80 m-auto" src={landing_1} alt="" />
     </div>
 
-    <div class=" flex flex-col md:flex-row md:max-w-[1024px]">
+    <div class=" flex flex-col md:flex-row md:max-w-[1024px] md:gap-4 xl:gap-12">
       <div
-        class="flex flex-col md:max-w-[350px] md:justify-center md:mr-6 md:mb-40"
+        class="flex flex-col md:max-w-[500px] md:justify-center md:mr-6 md:mb-40 mt-6" 
       >
-        <h1 class="">Keep organized with folders</h1>
-        <h2 class="mb-10 max-w-[480px]">
+        <h1 class="xl:text-4xl">Keep organized with folders</h1>
+        <h2 class="mb-10 max-w-[480px]  xl:text-2xl">
           Use customizable folders for your projects and ideas, ensuring that
           all your materials are and neatly categorized
         </h2>
       </div>
 
       <div class="relative flex justify-center">
-        <img class="max-w-64 drop-shadow-lg" src={landing_2_0} alt="" />
+        <img class="max-w-64 drop-shadow-lg z-[1] mb-10"
+       style="transform: translateY({scrollY * 0.025}px);" src={landing_2_0} alt="" />
         <img
-          class="absolute max-w-64 drop-shadow-lg"
+          class="absolute top-4 left-1 max-w-80 drop-shadow-lg z-[2] transform"
+       style="transform: translateY({scrollY * 0.015}px);"
           src={landing_2_1}
           alt=""
         />
         <img
-          class="absolute max-w-64 drop-shadow-lg"
+          class="absolute -top-2 -left-6 max-w-80 drop-shadow-lg z-[2] transform"
+       
           src={landing_2_2}
           alt=""
         />
         <img
-          class="absolute max-w-64 object-cover drop-shadow-lg"
+          class="absolute top-16 -left-6 max-w-80 object-cover drop-shadow-lg z-[2] transform"
+       
           src={landing_2_3}
           alt=""
         />
 
         <img
-          class="absolute -top-10 transform translate-x-2 min-w-[1200px] z-[-1]"
+          class="absolute -top-10 transform translate-x-2 min-w-[1200px] z-[0]"
           src={bgBoxes}
           alt=""
         />
@@ -148,27 +175,32 @@
   </section>
 
   <section class="bg-primary">
+    <div class=" max-w-[1280px] w-full m-auto">
     <h1 class="text text-xl">Users said about us</h1>
-    <div class="card bg-white mr-14 ml-4 px-4 py-2 mb-4 drop-shadow-lg">
+    <div class="flex flex-col sm:flex-row sm:gap-4">
+    <div class="card bg-white mr-14 sm:m-0 ml-4 px-4 py-6 mb-4 drop-shadow-lg">
       <h2 class="font-bold">Highly recommended</h2>
       <p>
         I designed my first Airbnb with this help. Very useful! Do not know how
         else could I do it without this app.
       </p>
     </div>
-    <div class="card bg-white ml-14 mr-4 px-4 py-2 mb-4 drop-shadow-lg">
+    <div class="card bg-white ml-14 sm:m-0 mr-4 px-4 py-6 mb-4 drop-shadow-lg">
       <h2 class="font-bold">Great app!</h2>
       <p>
         I love this app! It’s so easy to create mood boards and imagine how your
         room will look! 5 stars!!!!
       </p>
     </div>
-    <div class="card bg-white mr-14 ml-4 px-4 py-2 mb-4 drop-shadow-lg">
+    <div class="card bg-white mr-14 sm:m-0 ml-4 px-4 py-6 mb-4 drop-shadow-lg">
       <h2 class="font-bold">Easy to use!</h2>
       <p>
         I am a designer and this app allows me to quickly create mood boards. I
         love it and use it all the time!
       </p>
     </div>
+  </div></div>
   </section>
+
+ 
 </main>

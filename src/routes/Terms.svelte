@@ -3,7 +3,7 @@
 </script>
 
 
-<div class="m-auto max-w-[1440px] mt-28">
+<div class="m-auto max-w-[1440px] mt-28 px-12">
     <Terms/>
 </div>
 

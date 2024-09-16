@@ -13,7 +13,7 @@
 
   import Home from './routes/Home.svelte';
   import Privacy from './routes/Privacy.svelte';
-  import TermsOfUse from './routes/Termsofuse.svelte';
+  import Terms from './routes/Terms.svelte';
   import Contact from './routes/Contact.svelte';
   import NotFound from './routes/Notfound.svelte';
 
@@ -23,7 +23,7 @@
   const routes = {
     '/': Home,
     '/privacy': Privacy,
-    '/terms': TermsOfUse,
+    '/terms': Terms,
     '/contact': Contact,
     '*': NotFound // Wildcard (*) route to handle 404
   };

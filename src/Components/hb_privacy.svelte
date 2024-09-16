@@ -3,12 +3,12 @@
 
 </script>
 
-<div data-custom-class="body">
-  <div>
+<div class="mt-10" data-custom-class="body">
+  <div  style="text-align: center;">
     <strong>
       <span style="font-size: 26px;">
-        <span data-custom-class="title">
-          <bdt class="block-component"> </bdt>
+        <span data-custom-class="title;">
+          <bdt class="block-component;text-align: center;"> </bdt>
           <bdt class="question">PRIVACY POLICY</bdt>
           <bdt class="statement-end-if-in-editor"> </bdt>
         </span>
@@ -18,10 +18,10 @@
   <div>
     <br />
   </div>
-  <div>
+  <div  style="text-align: center;">
     <span style="color: rgb(127, 127, 127);">
       <strong>
-        <span style="font-size: 15px;">
+        <span style="font-size: 15px;text-align: center;">
           <span data-custom-class="subtitle"
             >Last updated <bdt class="question">September 02, 2024</bdt>
           </span>
