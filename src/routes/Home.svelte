@@ -11,10 +11,8 @@
   import landing_3 from "./../assets/img_landing_3.png";
   import landing_4 from "./../assets/img_landing_4.png";
   import boxes from "./../assets/boxes_big_op.svg";
-  import shadow from "./../assets/shadow.svg";
   import bgBoxes from "./../assets/bg-boxes.svg";
-  import Header from "../Components/Header.svelte";
-  import Footer from "../Components/Footer.svelte";
+
 
   import { onMount } from 'svelte';
 
@@ -30,6 +28,8 @@ onMount(() => {
   window.addEventListener('scroll', handleScroll);
   return () => window.removeEventListener('scroll', handleScroll);
 });
+
+
 </script>
 
 <style>
@@ -42,7 +42,7 @@ onMount(() => {
 
 <main class="relative overflow-x-hidden">
   <section
-    class="relative bg-primary p-10 md:p-12 lg:p-12 pb-0 flex justify-center items-center text-center"
+    class="relative bg-primary p-10 md:p-12 lg:p-12 lg:py-24  pb-0 flex justify-center items-center text-center"
   >
     <div
       class="z-10 absolute top-0 w-screen h-20 bg-gradient-to-b from-primary/100 to-primary/0
@@ -73,18 +73,18 @@ onMount(() => {
         >
           <a
             class="flex items-center justify-center bg-secondary rounded-full text text-mg font-semibold min-h-10 min-w-[180px] xl:px-8"
-            href="#"
+            href="https://apps.apple.com/us/app/moodboard-by-homeboard/id1612805374"
           >
-            <img class="h-8 xl:h-12 " src={apple} alt="" />
-            <h2 class="mb-0 text opacity-100 xl:text-2xl">Get iOS</h2>
+            <img class="h-8 xl:h-10 mb-2" src={apple} alt="" />
+            <h2 class="m-0 text opacity-100 xl:text-2xl font-normal">Get iOS</h2>
           </a>
 
           <a
             class="flex items-center justify-center p-2 bg-secondary rounded-full text text-mg font-semibold min-h-10 gap-2 min-w-[180px] lg:px-8"
-            href="#"
+            href="https://play.google.com/store/apps/details?id=com.vdmnszk.hb&hl=en_US"
           >
             <img class="h-4 " src={android} alt="" />
-            <h2 class="mb-0 text opacity-100 xl:text-2xl">Get Android</h2>
+            <h2 class="mb-0 text opacity-100 xl:text-2xl  font-normal">Get Android</h2>
           </a>
         </div>
       </div>
