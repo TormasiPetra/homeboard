@@ -4,9 +4,9 @@
 
 <footer class=" left-0 right-0 bottom-0 p-6 text-center z-10">
     <div class="flex flex-col items-center gap-4">
-      <a use:link href="/privacy">Privacy Policy</a>
-      <a use:link href="/terms">Term of use</a>
-      <a use:link href="/contact">Contact</a>
+      <a  href="/#/privacy">Privacy Policy</a>
+      <a  href="/#/terms">Term of use</a>
+      <a  href="/#/contact">Contact</a>
     </div>
     <div class="p-8 flex gap-4 justify-center">
       <button>
