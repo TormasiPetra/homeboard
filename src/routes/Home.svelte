@@ -12,17 +12,16 @@
   import landing_4 from "./../assets/img_landing_4.png";
   import boxes from "./../assets/boxes_big_op.svg";
   import bgBoxes from "./../assets/bg-boxes.svg";
+  import reviewBoxes from "./../assets/reviews_bg.svg";
 
   import { onMount } from "svelte";
 
   let scrollY = 0;
 
-  // Function to update scroll position
   function handleScroll() {
     scrollY = window.scrollY;
   }
 
-  // Add event listener when component mounts
   onMount(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -116,7 +115,7 @@
       class=" flex flex-col md:flex-row md:max-w-[1024px] md:justify-start md:gap-8 xl:gap-12"
     >
       <div
-        class="flex flex-col md:max-w-[500px] md:justify-center md:mr-6 md:mb-40 mt-10 xl:mr-12"
+        class="flex flex-col md:max-w-[500px] md:justify-center md:mr-6 md:mb-40 xl:mr-12"
       >
         <h1 class="xl:text-4xl">Keep organized with folders</h1>
         <h2 class="mb-10 max-w-[480px] xl:text-2xl">
@@ -175,30 +174,43 @@
     </div>
 
     <div
-      class="flex flex-col md:flex-row md:max-w-[860px] md:justify-start md:gap-8 xl:gap-12 mt-6"
+      class="flex flex-col md:flex-row md:max-w-[964px] md:justify-start md:gap-8 xl:gap-12 mt-6"
     >
-      <div class="flex flex-col md:justify-center md:mr-6 md:mb-40 mt-10 xl:mr-12">
-        <h1 class="xl:text-4xl">Create mood boards easily in no time</h1>
+      <div
+        class="flex flex-col md:justify-center md:mr-6 md:mb-40 mt-10 xl:mr-12 max-w-[500px]"
+      >
+        <h1 class="xl:text-4xl max-w-[420px]">Create mood boards easily in no time</h1>
         <h2 class="xl:text-2xl">
           Add images, shapes, texts from various sources to start designing your
           home
         </h2>
       </div>
-      <div class="md:max-w-[450px] md:min-w-[400px]">
+      <div class="max-w-[400px] m-auto md:max-w-[450px] md:min-w-[400px] mt-12">
         <img class="drop-shadow-lg" src={landing_4} alt="" />
       </div>
     </div>
   </section>
 
-  <section class="bg-primary">
-    <div class=" max-w-[1280px] w-full m-auto">
-      <h1 class="text text-xl">Users said about us</h1>
-      <div class="flex flex-col sm:flex-row sm:gap-4">
+  <section
+    class="relative mt-12 bg-primary flex justify-center items-center text-center"
+  >
+    <div class="absolute m-0 h-[600px] max-sm:h-[948px] -top-32 -left-2 -right-2 overflow-y-hidden">
+      <div class="absolute bottom-0 bg-gradient-to-t from-neutral to-neutral/0 w-full h-32"></div>
+      <img
+        class=" -top-32 -left-2 -right-2 min-w-[1750px] max-sm:min-w-[2500px] w-full "
+        src={reviewBoxes}
+        alt=""
+      />
+    </div>
+
+    <div class="text-left max-w-[964px] w-full m-auto">
+      <h1 class="text text-xl lg:text-2xl lg:text-center ">Users said about us</h1>
+      <div class="flex flex-col m-auto sm:flex-row sm:gap-4 max-sm:max-w-[330px]">
         <div
-          class="card bg-white mr-14 sm:m-0 ml-4 px-4 py-6 mb-4 drop-shadow-lg"
+          class="card bg-white mr-14 sm:m-0 ml-4 px-4 py-6 mb-4 drop-shadow-lg "
         >
-          <h2 class="font-bold">Highly recommended</h2>
-          <p>
+          <h2 class="font-bold lg:text-xl">Highly recommended</h2>
+          <p class="lg:text-lg">
             I designed my first Airbnb with this help. Very useful! Do not know
             how else could I do it without this app.
           </p>
@@ -206,8 +218,8 @@
         <div
           class="card bg-white ml-14 sm:m-0 mr-4 px-4 py-6 mb-4 drop-shadow-lg"
         >
-          <h2 class="font-bold">Great app!</h2>
-          <p>
+          <h2 class="font-bold lg:text-xl">Great app!</h2>
+          <p class="lg:text-lg">
             I love this app! It’s so easy to create mood boards and imagine how
             your room will look! 5 stars!!!!
           </p>
@@ -215,8 +227,8 @@
         <div
           class="card bg-white mr-14 sm:m-0 ml-4 px-4 py-6 mb-4 drop-shadow-lg"
         >
-          <h2 class="font-bold">Easy to use!</h2>
-          <p>
+          <h2 class="font-bold lg:text-xl">Easy to use!</h2>
+          <p class="lg:text-lg">
             I am a designer and this app allows me to quickly create mood
             boards. I love it and use it all the time!
           </p>

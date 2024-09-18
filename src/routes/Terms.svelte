@@ -4,7 +4,7 @@
 
 
 
-<div class="m-auto max-w-[1440px] mt-28 px-12">
+<div class="m-auto max-w-[1200px] my-28 px-6 sm:px-12">
     <Terms/>
 </div>
 
