@@ -179,7 +179,9 @@
       <div
         class="flex flex-col md:justify-center md:mr-6 md:mb-40 mt-10 xl:mr-12 max-w-[500px]"
       >
-        <h1 class="xl:text-4xl max-w-[420px]">Create mood boards easily in no time</h1>
+        <h1 class="xl:text-4xl max-w-[420px]">
+          Create mood boards easily in no time
+        </h1>
         <h2 class="xl:text-2xl">
           Add images, shapes, texts from various sources to start designing your
           home
@@ -192,22 +194,30 @@
   </section>
 
   <section
-    class="relative mt-12 bg-primary flex justify-center items-center text-center"
+    class="relative mt-20 bg-primary flex justify-center items-center text-center mb-32"
   >
-    <div class="absolute m-0 h-[600px] max-sm:h-[948px] -top-32 -left-2 -right-2 overflow-y-hidden">
-      <div class="absolute bottom-0 bg-gradient-to-t from-neutral to-neutral/0 w-full h-32"></div>
+    <div
+      class="absolute m-0 h-[560px] max-sm:h-[948px] -top-32 -left-2 -right-2 overflow-hidden"
+    >
+      <div
+        class="absolute bottom-0 bg-gradient-to-t from-neutral to-neutral/0 w-full h-32"
+      ></div>
       <img
-        class=" -top-32 -left-2 -right-2 min-w-[1750px] max-sm:min-w-[2500px] w-full "
+        class=" -top-32 -left-2 -right-2 min-w-[1750px] max-sm:min-w-[2500px] w-full"
         src={reviewBoxes}
         alt=""
       />
     </div>
 
     <div class="text-left max-w-[964px] w-full m-auto">
-      <h1 class="text text-xl lg:text-2xl lg:text-center ">Users said about us</h1>
-      <div class="flex flex-col m-auto sm:flex-row sm:gap-4 max-sm:max-w-[330px]">
+      <h1 class="text text-xl lg:text-2xl lg:text-center">
+        Users said about us
+      </h1>
+      <div
+        class="flex flex-col m-auto sm:flex-row sm:gap-4 max-sm:max-w-[330px]"
+      >
         <div
-          class="card bg-white mr-14 sm:m-0 ml-4 px-4 py-6 mb-4 drop-shadow-lg "
+          class="card bg-white mr-14 sm:m-0 ml-4 px-4 py-6 mb-4 drop-shadow-lg"
         >
           <h2 class="font-bold lg:text-xl">Highly recommended</h2>
           <p class="lg:text-lg">

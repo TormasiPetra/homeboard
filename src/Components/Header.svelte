@@ -1,29 +1,25 @@
 <script lang="ts">
   import { link } from "svelte-spa-router";
+
   import logo from "./../assets/img_logo_homeboard_white.svg";
-
-
+  import pinterest from "./../assets/pinterest.svg";
+  import instagram from "./../assets/instagram.svg";
+  import andro from "./../assets/store_android.png";
 </script>
 
-
-
 <header
-  class="sticky w-full flex justify-between items-center py-2 px-4 md:px-8 bg-primary  top-0 z-50"
+  class="sticky w-full flex justify-between items-center py-2 px-4 md:px-8 bg-primary top-0 z-50"
 >
-  <a  href="/#/" class="logo text">
+  <a href="/#/" class="logo text">
     <img class="h-8" src={logo} alt="logo" />
   </a>
 
-  <nav class="flex gap-2">
-    <a
-   
-      href="/#/privacy"
-      class="blog btn border-none btn-accent bg-opacity-80 text-primary-content"
-      >Privacy</a
-    >
-    <a 
-     href="/#/terms" class="download btn text-primary-content btn-outline">Terms</a
+  <nav class="flex gap-2 justify-center items-center">
+    <a class="text-white" href="https://hu.pinterest.com/homeboardapp/"> 
+      <img class="h-10" src={pinterest} alt="" /></a>
+    <a href="https://www.instagram.com/homeboard.app/"> <img class="h-10" src={instagram} alt="" /></a>
+    <a href="/#/" class="download h-10 outline outline-2 rounded-full text-primary-content px-4 py-2"
+      >Download</a
     >
   </nav>
 </header>
-
