@@ -13,7 +13,6 @@
   import boxes from "./../assets/boxes_big_op.svg";
   import bgBoxes from "./../assets/bg-boxes.svg";
   import reviewBoxes from "./../assets/reviews_bg.svg";
-  import star from "./../assets/star.svg";
 
   import { onMount } from "svelte";
 
@@ -64,7 +63,7 @@
         >
           <a
             class="flex items-center justify-center bg-secondary rounded-full text text-mg font-semibold min-h-10 min-w-[180px] lg:min-w-[220px] xl:px-8"
-            href="https://apps.apple.com/hu/app/id1612805374"
+            href="https://apps.apple.com/us/app/moodboard-by-homeboard/id1612805374"
           >
             <img class="h-8 xl:h-10 mb-2" src={apple} alt="" />
             <h2 class="m-0 text opacity-100 xl:text-xl font-normal">Get iOS</h2>
@@ -72,7 +71,7 @@
 
           <a
             class="flex items-center justify-center p-2 bg-secondary rounded-full text text-mg font-semibold min-h-10 gap-2 min-w-[180px] lg:px-8 lg:min-w-[220px]"
-            href="https://play.google.com/store/apps/details?id=com.vdmnszk.hb"
+            href="https://play.google.com/store/apps/details?id=com.vdmnszk.hb&hl=en_US"
           >
             <img class="h-4" src={android} alt="" />
             <h2 class="mb-0 text opacity-100 xl:text-xl font-normal">
@@ -195,30 +194,30 @@
   </section>
 
   <section
-    class="relative mt-20 bg-primary flex justify-center items-center text-center mb-32 px-0"
+    class="relative mt-20 bg-primary flex justify-center items-center text-center mb-32"
   >
     <div
-      class="absolute m-0 h-[640px] max-sm:h-[1424px] -top-32 -left-2 -right-2 overflow-hidden"
+      class="absolute m-0 h-[560px] max-sm:h-[948px] -top-32 -left-2 -right-2 overflow-hidden"
     >
       <div
         class="absolute bottom-0 bg-gradient-to-t from-neutral to-neutral/0 w-full h-32"
       ></div>
       <img
-        class=" -top-32 -left-2 -right-2 min-w-[1850px] max-sm:min-w-[3880px] w-full"
+        class=" -top-32 -left-2 -right-2 min-w-[1750px] max-sm:min-w-[2500px] w-full"
         src={reviewBoxes}
         alt=""
       />
-    </div> 
+    </div>
 
-    <div class="text-left">
-      <h1 class="text text-xl lg:text-2xl text-center ">
+    <div class="text-left max-w-[964px] w-full m-auto">
+      <h1 class="text text-xl lg:text-2xl lg:text-center">
         Users said about us
       </h1>
       <div
-        class="carousel carousel-left flex flex-col m-auto sm:flex-row sm:gap-4 max-sm:max-w-[330px] max-w-[1840px]"
+        class="flex flex-col m-auto sm:flex-row sm:gap-4 max-sm:max-w-[330px]"
       >
         <div
-          class="carousel-item card bg-white mr-14 sm:m-0 sm:ml-4 ml-4 px-4 py-6 mb-4 drop-shadow-lg max-w-[320px]"
+          class="card bg-white mr-14 sm:m-0 ml-4 px-4 py-6 mb-4 drop-shadow-lg"
         >
           <h2 class="font-bold lg:text-xl">Highly recommended</h2>
           <p class="lg:text-lg">
@@ -227,7 +226,7 @@
           </p>
         </div>
         <div
-          class="carousel-item card bg-white ml-14 sm:m-0 mr-4 px-4 py-6 mb-4 drop-shadow-lg max-w-[320px]"
+          class="card bg-white ml-14 sm:m-0 mr-4 px-4 py-6 mb-4 drop-shadow-lg"
         >
           <h2 class="font-bold lg:text-xl">Great app!</h2>
           <p class="lg:text-lg">
@@ -236,32 +235,12 @@
           </p>
         </div>
         <div
-          class="carousel-item card bg-white mr-14 sm:m-0 ml-4 px-4 py-6 mb-4 drop-shadow-lg max-w-[320px]"
+          class="card bg-white mr-14 sm:m-0 ml-4 px-4 py-6 mb-4 drop-shadow-lg"
         >
           <h2 class="font-bold lg:text-xl">Easy to use!</h2>
           <p class="lg:text-lg">
             I am a designer and this app allows me to quickly create mood
             boards. I love it and use it all the time!
-          </p>
-        </div>
-        <div
-          class="carousel-item card bg-white ml-14 sm:m-0 px-4 py-6 mb-4 drop-shadow-lg max-w-[320px]"
-        >
-          <h2 class="font-bold lg:text-xl">Home Decorating</h2>
-          <p class="lg:text-lg">
-            Love this app! User friendly and helps me with all my projects. I
-            bought the subscription for a year, that’s how often I use it!
-            Before decorating or changing anything in my house, I use this for
-            my mock ups!
-          </p>
-        </div>
-        <div
-          class="carousel-item card bg-white mr-14 sm:m-0 ml-4 px-4 py-6 mb-4 drop-shadow-lg max-w-[320px]"
-        >
-          <h2 class="font-bold lg:text-xl">Love it!</h2>
-          <p class="lg:text-lg">
-            In the process of building our house and I’ve been having so much
-            fun using this app to design mood boards for every room!
           </p>
         </div>
       </div>

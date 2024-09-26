@@ -24,7 +24,6 @@
     '/': Home,
     '/privacy': Privacy,
     '/terms': Terms,
-    '/contact': Contact,
     '*': NotFound // Wildcard (*) route to handle 404
   };
 </script>
