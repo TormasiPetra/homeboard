@@ -198,13 +198,13 @@
     class="relative mt-20 bg-primary flex justify-center items-center text-center mb-32 px-0"
   >
     <div
-      class="absolute m-0 h-[640px] max-sm:h-[1424px] -top-32 -left-2 -right-2 overflow-hidden"
+      class="absolute m-0 h-[640px] max-sm:h-[1440px] -top-32 -left-2 -right-2 overflow-hidden"
     >
       <div
         class="absolute bottom-0 bg-gradient-to-t from-neutral to-neutral/0 w-full h-32"
       ></div>
       <img
-        class=" -top-32 -left-2 -right-2 min-w-[1850px] max-sm:min-w-[3880px] w-full"
+        class=" -top-32 -left-2 -right-2 min-w-[1840px] max-sm:min-w-[3880px] w-full"
         src={reviewBoxes}
         alt=""
       />
@@ -215,7 +215,7 @@
         Users said about us
       </h1>
       <div
-        class="carousel carousel-left flex flex-col m-auto sm:flex-row sm:gap-4 max-sm:max-w-[330px] max-w-[1840px]"
+        class="carousel carousel-left flex flex-col m-auto sm:flex-row sm:gap-4 max-sm:max-w-[330px] max-w-[1860px]"
       >
         <div
           class="carousel-item card bg-white mr-14 sm:m-0 sm:ml-4 ml-4 px-4 py-6 mb-4 drop-shadow-lg max-w-[320px]"
@@ -245,7 +245,7 @@
           </p>
         </div>
         <div
-          class="carousel-item card bg-white ml-14 sm:m-0 px-4 py-6 mb-4 drop-shadow-lg max-w-[320px]"
+          class="carousel-item mr-4 card bg-white ml-14 sm:m-0 px-4 py-6 mb-4 drop-shadow-lg max-w-[320px]"
         >
           <h2 class="font-bold lg:text-xl">Home Decorating</h2>
           <p class="lg:text-lg">
