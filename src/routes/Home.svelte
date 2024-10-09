@@ -195,27 +195,27 @@
   </section>
 
   <section
-    class="relative mt-20 bg-primary flex justify-center items-center text-center mb-32 px-0 overflow-hidden"
+    class="relative mt-20 bg-primary flex justify-center items-center text-center mb-52 px-0 "
   >
     <div
-      class="absolute m-0 max-sm:h-[1580px] max-md:h-[1160px] h-[1200px] -top-32 -left-2 -right-2 overflow-hidden"
+      class="absolute m-0 max-sm:h-[1580px] max-md:h-[1140px] md:h-[1050px] -top-32 -left-2 -right-2 overflow-hidden"
     >
       <div
         class="absolute bottom-0 bg-gradient-to-t from-neutral to-neutral/0 w-full h-32"
       ></div>
       <img
-        class="absolute max-sm:-left-48 -right-2 min-w-[3200px] max-sm:min-w-[4080px] max-md:min-w-[3000px] w-full"
+        class="absolute max-sm:-left-48 -right-2 min-w-[2600px] max-sm:min-w-[4080px] max-md:min-w-[3000px] w-full"
         src={reviewBoxes}
         alt="reviewboxes"
       />
     </div> 
 
-    <div class="text-left max-w-[964px] w-full m-auto p-14 md:p-24">
+    <div class="text-left max-w-[964px] lg:max-w-[1240px] w-full m-auto p-14 lg:p-24">
       <h1 class="text text-xl lg:text-2xl text-center ">
         Users said about us
       </h1>
       <div
-        class="flex flex-col m-auto sm:grid sm:grid-rows-3 sm:grid-flow-col sm:gap-4 sm:justify-center max-sm:max-w-[330px] max-w-[1860px]"
+        class="flex flex-col m-auto sm:grid sm:grid-rows-3 lg:grid-rows-2 lg:grid-cols-3 lg:grid-flow-row sm:grid-flow-col sm:gap-4 sm:justify-center max-sm:max-w-[330px] max-w-[1860px]"
       >
         <div
           class="card bg-white sm:m-0 px-4 py-6 mb-4 drop-shadow-lg "
@@ -227,12 +227,12 @@
           </p>
         </div>
         <div
-          class="card bg-white sm:m-0 px-4 py-6 mb-4 drop-shadow-lg  sm:row-span-2"
+          class="card bg-white sm:m-0 px-4 py-6 mb-4 drop-shadow-lg sm:row-span-2 lg:row-span-1 lg:col-span-2"
         >
           <h2 class="font-bold lg:text-xl">Home Decorating</h2>
           <p class="lg:text-lg">
-            Love this app! <br>User friendly and helps me with all my projects. I
-            bought the subscription for a year, that’s how often I use it!<br><br>
+            Love this app! <br class="lg:hidden">User friendly and helps me with all my projects. I
+            bought the subscription for a year, that’s how often I use it!<br class="lg:hidden"><br class="lg:hidden">
             Before decorating or changing anything in my house, I use this for
             my mock ups!
           </p>
