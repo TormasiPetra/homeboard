@@ -10,7 +10,7 @@
 <header
   class="sticky w-full flex justify-between items-center py-2 px-4 md:px-8 bg-primary top-0 z-50"
 >
-  <a href="/" class="logo text">
+  <a use:link href="/" class="logo text">
     <img class="h-8" src={logo} alt="logo" />
   </a>
 

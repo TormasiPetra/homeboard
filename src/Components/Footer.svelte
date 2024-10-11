@@ -20,8 +20,8 @@
   </div>
   <div class="flex flex-col justify-evenly items-center gap-4">
     <div class="flex flex-col justify-evenly items-center gap-4">
-      <a href="/privacy">Privacy Policy</a>
-      <a href="/terms">Term of use</a>
+      <a use:link href="/privacy">Privacy Policy</a>
+      <a use:link href="/terms">Term of use</a>
       <a href="mailto:homeboard@vdmnszk.com">Contact</a>
     </div>
     <img class="max-w-20" src={logomini} alt="logo" />
